@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img1 {
+    background-image: url('https://images.alphacoders.com/475/thumb-1920-475650.jpg'); /* ใส่ URL รูปที่ 1 */
+}
+
+.img2 {
+    background-image: url('https://wallpapercat.com/w/full/5/f/2/3006-1920x1080-desktop-1080p-audi-background.jpg'); /* ใส่ URL รูปที่ 2 */
+}
+
+
+.black-block {
+    color: white;
+    background-color: black;
+    padding: 50px 80px;
+    text-align: center;
+}
+
+
+.caption .border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}

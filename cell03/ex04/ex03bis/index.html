@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        /* รีเซ็ตพื้นฐาน */
+        * { box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 { margin-top: 0; color: #333; font-weight: 600; }
+
+        /* ปุ่ม New */
+        #new_btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #007AFF; /* สีฟ้าสไตล์ iOS */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        #new_btn:hover { background-color: #0056b3; }
+
+        /* รายการ To-Do */
+        #ft_list {
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .todo-item {
+            padding: 15px 10px;
+            border-bottom: 1px solid #f1f1f1;
+            color: #444;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .todo-item:hover {
+            background-color: #fafafa;
+            transform: translateX(5px);
+            color: #ff3b30; /* เปลี่ยนสีตอน hover ให้รู้ว่ากดลบได้ */
+        }
+
+        /* Animation เวลาเพิ่มของใหม่ */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>My Tasks</h2>
+        <button id="new_btn">+ Add New Task</button>
+        <div id="ft_list">
+            </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>

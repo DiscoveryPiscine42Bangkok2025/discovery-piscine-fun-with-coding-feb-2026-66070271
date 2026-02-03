@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+select{
+    background-color: rgb(229, 203, 203);
+}
+option{
+    background-color: rgb(189, 214, 236);
+}
